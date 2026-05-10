@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youssef Ben Haj Salah | DevSecOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">YBS<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-tag"><span class="dot"></span> Available for opportunities</p>
+        <h1>Youssef<br /><span class="accent">Ben Haj Salah</span></h1>
+        <h2 class="hero-role">DevSecOps Engineer</h2>
+        <p class="hero-desc">
+          Securing and automating modern application delivery pipelines in the banking sector.
+          Integrating security across the full SDLC — from SAST &amp; DAST to WAF administration and container security.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+          <a href="#experience" class="btn-secondary">View My Work</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years at Attijari Bank</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Languages Spoken</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="p_1960.jpg" alt="Youssef Ben Haj Salah" id="hero-photo" onerror="this.style.display='none'; document.getElementById('hero-initials').style.display='flex'" />
+          <div class="hero-initials" id="hero-initials">YBS</div>
+          <div class="frame-border"></div>
+          <div class="frame-corner tl"></div>
+          <div class="frame-corner tr"></div>
+          <div class="frame-corner bl"></div>
+          <div class="frame-corner br"></div>
+        </div>
+        <div class="floating-badge badge-1">
+          <span class="badge-icon">&#128737;</span>
+          <span>DevSecOps</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <span class="badge-icon">&#128295;</span>
+          <span>CI/CD</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <span class="badge-icon">&#128274;</span>
+          <span>OWASP</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="photo2.jpg" alt="Youssef Ben Haj Salah" onerror="this.parentElement.style.background='var(--surface)'; this.style.display='none'" />
+          </div>
+          <div class="about-img-secondary">
+            <img src="photo3.jpg" alt="Youssef Ben Haj Salah" onerror="this.parentElement.style.background='var(--surface)'; this.style.display='none'" />
+          </div>
+          <div class="about-accent-box">
+            <span class="mono">Tunis, Tunisia</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">
+            I'm a <strong>DevSecOps Engineer</strong> with a passion for building secure, automated, and resilient software delivery pipelines. Currently working at <strong>Attijari Bank Tunisia</strong>, one of the leading financial institutions in North Africa.
+          </p>
+          <p>
+            My work bridges the gap between development speed and security rigor — I implement security controls at every stage of the SDLC, from code commit to production deployment, ensuring that security is never an afterthought.
+          </p>
+          <p>
+            I've deployed enterprise-grade tools including SAST scanners, DAST frameworks, WAF policies, and container security hardening, all within a regulated banking environment where compliance and resilience are non-negotiable.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">Email</span>
+              <a href="mailto:youssefbhs@gmail.com" class="detail-value">youssefbhs@gmail.com</a>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Phone</span>
+              <span class="detail-value">+216 52 913 907</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Tunis, Tunisia</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/youssef-ben-haj-salah" target="_blank" class="detail-value">youssef-ben-haj-salah</a>
+            </div>
+          </div>
+          <a href="Youssef_Ben_Haj_Salah_ENG_Resume.pdf" download class="btn-primary" style="display:inline-flex;margin-top:1.5rem">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 — Experience</span>
+        <h2 class="section-title">Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item active" data-index="0">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">DevSecOps Engineer</h3>
+                <span class="timeline-company">Attijari Bank Tunisia</span>
+              </div>
+              <span class="timeline-period">2023 — Present</span>
+            </div>
+            <ul class="timeline-duties">
+              <li>Design and implement secure DevSecOps pipelines integrating security controls across the SDLC using Git-based CI/CD environments.</li>
+              <li>Deploy and manage application security tools including SAST, DAST, and dependency scanning to identify vulnerabilities early in development cycles.</li>
+              <li>Administer and maintain Web Application Firewall (WAF) policies to protect banking applications against OWASP Top 10 threats.</li>
+              <li>Manage TLS/SSL certificate lifecycle, including generation, renewal, and deployment for internal and public-facing services.</li>
+              <li>Perform Active Directory administration including user access management, role assignments, and security policy enforcement.</li>
+              <li>Collaborate with the Security Operations Center (SOC) to analyze security alerts, investigate potential incidents, and improve detection capabilities.</li>
+              <li>Support the deployment and security of containerized applications using Docker-based environments.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">SAST</span><span class="tag">DAST</span><span class="tag">WAF</span>
+              <span class="tag">CI/CD</span><span class="tag">Docker</span><span class="tag">Active Directory</span>
+              <span class="tag">TLS/SSL</span><span class="tag">SOC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="1">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Freelance Backend Developer</h3>
+                <span class="timeline-company">GDPR Compliance Platform</span>
+              </div>
+              <span class="timeline-period">2022</span>
+            </div>
+            <ul class="timeline-duties">
+              <li>Developed a Django-based web application supporting GDPR compliance for personal data processing.</li>
+              <li>Built backend modules for consent management, data documentation, and compliance workflows.</li>
+              <li>Designed secure APIs and database models for handling sensitive data.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Django</span><span class="tag">Python</span><span class="tag">GDPR</span><span class="tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="2">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Freelance Full-Stack &amp; DevOps Engineer</h3>
+                <span class="timeline-company">MedTech University — Career Center Platform</span>
+              </div>
+              <span class="timeline-period">2021</span>
+            </div>
+            <ul class="timeline-duties">
+              <li>Developed a MEAN stack web application for the university Career Center platform.</li>
+              <li>Implemented backend APIs and frontend features for job postings and candidate management.</li>
+              <li>Deployed the platform using Docker and CI/CD workflows.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">MEAN Stack</span><span class="tag">Node.js</span><span class="tag">Angular</span><span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="3">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Freelance DevOps Engineer</h3>
+                <span class="timeline-company">Remote</span>
+              </div>
+              <span class="timeline-period">2020</span>
+            </div>
+            <ul class="timeline-duties">
+              <li>Designed and implemented CI/CD pipelines to automate application build and deployment.</li>
+              <li>Managed Linux servers and Docker-based environments for application hosting.</li>
+              <li>Configured Nginx and infrastructure components to improve deployment reliability.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Nginx</span><span class="tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="4">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineering Intern</h3>
+                <span class="timeline-company">Accretio</span>
+              </div>
+              <span class="timeline-period">2019</span>
+            </div>
+            <ul class="timeline-duties">
+              <li>Contributed to an open-source enterprise platform developed in Ruby.</li>
+              <li>Implemented modules requested by the HR department to support recruitment processes.</li>
+              <li>Collaborated with the development team to test and integrate new features.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Ruby</span><span class="tag">Open Source</span><span class="tag">HR Modules</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 — Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-icon">&#128737;</div>
+          <h3>DevSecOps &amp; Security</h3>
+          <ul class="skill-list">
+            <li>DevSecOps Pipeline Implementation</li>
+            <li>Secure SDLC</li>
+            <li>Application Security Testing (SAST / DAST)</li>
+            <li>Vulnerability Management</li>
+            <li>OWASP Top 10 Mitigation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">&#128269;</div>
+          <h3>Security Operations</h3>
+          <ul class="skill-list">
+            <li>Web Application Firewall (WAF) Administration</li>
+            <li>Active Directory Administration</li>
+            <li>SOC Collaboration &amp; Incident Investigation</li>
+            <li>Access Control &amp; Identity Management</li>
+            <li>TLS / SSL Certificate Lifecycle Management</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">&#9881;</div>
+          <h3>DevOps &amp; Infrastructure</h3>
+          <ul class="skill-list">
+            <li>CI/CD Pipeline Implementation</li>
+            <li>Docker &amp; Container Security</li>
+            <li>Linux Systems Administration</li>
+            <li>Git-based Workflows</li>
+            <li>Nginx Configuration</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">&#128187;</div>
+          <h3>Development</h3>
+          <ul class="skill-list">
+            <li>Python / Django</li>
+            <li>Ruby on Rails</li>
+            <li>MEAN Stack (Node.js, Angular)</li>
+            <li>REST API Design</li>
+            <li>Secure Coding Practices</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">&#129309;</div>
+          <h3>Soft Skills</h3>
+          <ul class="skill-list">
+            <li>Security Risk Analysis</li>
+            <li>Cross-Team Collaboration</li>
+            <li>Problem Solving</li>
+            <li>Documentation &amp; Security Reporting</li>
+          </ul>
+        </div>
+
+        <div class="skill-card lang-card">
+          <div class="skill-card-icon">&#127760;</div>
+          <h3>Languages</h3>
+          <div class="lang-list">
+            <div class="lang-item">
+              <span class="lang-name">Arabic</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">English</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:80%"></div></div>
+              <span class="lang-level">Fluent</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">French</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:70%"></div></div>
+              <span class="lang-level">Good</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">German</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:25%"></div></div>
+              <span class="lang-level">Basic</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 — Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card featured">
+          <div class="edu-icon">&#127891;</div>
+          <div class="edu-body">
+            <span class="edu-period">2019 — 2023</span>
+            <h3>Software Engineering</h3>
+            <span class="edu-school">MedTech University, Tunis</span>
+            <p class="edu-courses">Courses: Advanced Mathematics, Physics, Cybersecurity Fundamentals</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#128218;</div>
+          <div class="edu-body">
+            <span class="edu-period">2017 — 2019</span>
+            <h3>Pre-Engineering Studies</h3>
+            <span class="edu-school">MedTech University, Tunis</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">&#127979;</div>
+          <div class="edu-body">
+            <span class="edu-period">2013 — 2017</span>
+            <h3>High School Diploma</h3>
+            <span class="edu-school">Tunisian School, Doha — Qatar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">05 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="contact-intro">
+            I'm open to new opportunities, collaborations, and interesting conversations around DevSecOps, application security, and cloud-native engineering. Feel free to reach out.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:youssefbhs@gmail.com" class="contact-link">
+              <span class="contact-link-icon">&#9993;</span>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">youssefbhs@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+21652913907" class="contact-link">
+              <span class="contact-link-icon">&#128222;</span>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+216 52 913 907</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/youssef-ben-haj-salah" target="_blank" class="contact-link">
+              <span class="contact-link-icon">&#128101;</span>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">youssef-ben-haj-salah</span>
+              </div>
+            </a>
+            <div class="contact-link">
+              <span class="contact-link-icon">&#128205;</span>
+              <div>
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-value">Tunis, Tunisia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Send Message</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">YBS<span class="accent">.</span></span>
+      <p class="footer-copy">&copy; 2024 Youssef Ben Haj Salah. All rights reserved.</p>
+      <a href="https://www.linkedin.com/in/youssef-ben-haj-salah" target="_blank" class="footer-link">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
