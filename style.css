@@ -363,6 +363,25 @@ section { padding: 7rem 0; }
   border: 3px solid var(--bg-2);
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
+.about-img-secondary .tech-card {
+  width: 100%;
+  height: 100%;
+  background: var(--surface);
+  padding: 1rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.tc-dots { display: flex; gap: 5px; margin-bottom: 0.3rem; }
+.tc-dots i { width: 8px; height: 8px; border-radius: 50%; display: block; }
+.tc-dots i:nth-child(1) { background: #ff5f57; }
+.tc-dots i:nth-child(2) { background: #febc2e; }
+.tc-dots i:nth-child(3) { background: #28c840; }
+.tc-row { display: flex; flex-direction: column; }
+.tc-k { color: var(--text-muted); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.tc-v { color: var(--text); font-size: 0.68rem; line-height: 1.4; }
+.tc-green { color: #28c840; }
 .about-accent-box {
   position: absolute;
   top: 2rem;
@@ -635,7 +654,9 @@ footer {
   .badge-2 { right: -10px; }
   .badge-3 { left: 0; }
   .about-grid { grid-template-columns: 1fr; }
-  .about-images { display: none; }
+  .about-images { display: block; max-width: 280px; margin: 0 auto 2rem; }
+  .about-img-secondary { display: none; }
+  .about-accent-box { display: none; }
   .about-details { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
   .skills-grid { grid-template-columns: 1fr; }

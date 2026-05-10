@@ -50,30 +50,49 @@ const langObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.lang-card').forEach(card => langObserver.observe(card));
 
-// Contact form handler
-document.getElementById('contact-form').addEventListener('submit', function (e) {
+// Contact form — Formspree: sign up at formspree.io, create a form, paste your ID below
+const FORMSPREE_ID = 'YOUR_FORM_ID';
+
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
   e.preventDefault();
   const note = document.getElementById('form-note');
   const btn = this.querySelector('button[type="submit"]');
-  const name = this.name.value.trim();
-  const email = this.email.value.trim();
-  const message = this.message.value.trim();
+  const data = {
+    name: this.name.value.trim(),
+    email: this.email.value.trim(),
+    message: this.message.value.trim()
+  };
 
-  if (!name || !email || !message) {
+  if (!data.name || !data.email || !data.message) {
     note.textContent = 'Please fill in all fields.';
     note.style.color = '#ff6b6b';
     return;
   }
 
-  // Build mailto link
-  const subject = encodeURIComponent('Portfolio Contact from ' + name);
-  const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
-  window.location.href = 'mailto:youssefbhs@gmail.com?subject=' + subject + '&body=' + body;
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
 
-  note.textContent = 'Opening your email client...';
-  note.style.color = 'var(--accent)';
-  this.reset();
-  setTimeout(() => { note.textContent = ''; }, 4000);
+  try {
+    const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (res.ok) {
+      note.textContent = "Message sent! I'll get back to you soon.";
+      note.style.color = 'var(--accent)';
+      this.reset();
+    } else {
+      throw new Error();
+    }
+  } catch {
+    note.textContent = 'Something went wrong. Email me directly at youssefbhs@gmail.com';
+    note.style.color = '#ff6b6b';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Send Message';
+    setTimeout(() => { note.textContent = ''; }, 6000);
+  }
 });
 
 // Active nav link on scroll
